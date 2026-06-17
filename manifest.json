@@ -2,13 +2,17 @@
   "name": "Calculadora de Impresión Profesional",
   "short_name": "CalcImpresión",
   "description": "Calculadora técnica y comercial para lonas, carteles opacos, stickers, corte y laminación. Ideal para talleres de impresión y operadores gráficos.",
-  "start_url": "/",
+  "start_url": "https://javierdmoro.github.io/CalculadoraP/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#f7f9fb",
   "theme_color": "#00288e",
   "orientation": "portrait",
-  "categories": ["utilities", "business", "productivity"],
+  "categories": [
+    "utilities",
+    "business",
+    "productivity"
+  ],
   "icons": [
     {
       "src": "https://cdn-icons-png.flaticon.com/192/3004/3004595.png",
@@ -25,15 +29,15 @@
   ],
   "screenshots": [
     {
-      "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=640&q=80",
+      "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&amp;fit=crop&amp;w=640&amp;q=80",
       "sizes": "640x1136",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Vista de Calculadora en Dispositivo Móvil"
     },
     {
-      "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1280&q=80",
-      "sizes": "1280&800",
+      "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&amp;fit=crop&amp;w=1280&amp;q=80",
+      "sizes": "1280&amp;800",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Vista de Ajustes de Calculadora en Tablet/Escritorio"
