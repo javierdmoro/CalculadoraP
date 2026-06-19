@@ -29,15 +29,15 @@
   ],
   "screenshots": [
     {
-      "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&amp;fit=crop&amp;w=640&amp;q=80",
+      "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=640&q=80",
       "sizes": "640x1136",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Vista de Calculadora en Dispositivo Móvil"
     },
     {
-      "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&amp;fit=crop&amp;w=1280&amp;q=80",
-      "sizes": "1280&amp;800",
+      "src": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1280&q=80",
+      "sizes": "1280x800",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Vista de Ajustes de Calculadora en Tablet/Escritorio"
