@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <title>Calculadora de Impresión Profesional</title>
+    <title>Calculadora de Impresión</title>
+    <meta name="description" content="Calculadora técnica y comercial para lonas, carteles opacos, stickers, corte y laminación. Ideal para talleres de impresión y operadores gráficos." />
+    <meta property="og:title" content="Calculadora de Impresión" />
+    <meta property="og:description" content="Calculadora técnica y comercial para lonas, carteles opacos, stickers, corte y laminación. Ideal para talleres de impresión y operadores gráficos." />
     
     <!-- PWA Meta Tags -->
     <meta name="theme-color" content="#00288e" />
@@ -20,19 +23,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-T42d93-j.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DrFOyVO1.css">
+    <script type="module" crossorigin src="./assets/index-BAZVpyP1.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Cu1RWPGK.css">
   </head>
   <body class="bg-[#f7f9fb] text-[#191c1e] min-h-screen antialiased select-none">
     <div id="root"></div>
     
     <!-- Service Worker Registration -->
     <script>
-      if ('serviceWorker' in navigator) {
+      if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
-            .then(reg => console.log('Service Worker registrado con éxito:', reg.scope))
-            .catch(err => console.error('Error al registrar Service Worker:', err));
+          try {
+            navigator.serviceWorker.register('/sw.js')
+              .then(reg => console.log('Service Worker registrado con éxito:', reg.scope))
+              .catch(err => console.warn('Service Worker no registrado:', err));
+          } catch (err) {
+            console.warn('Error al iniciar Service Worker:', err);
+          }
         });
       }
     </script>

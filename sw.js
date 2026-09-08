@@ -33,6 +33,12 @@ self.addEventListener('fetch', (e) => {
   // Solo interceptar peticiones GET en el mismo origen o CDN seguras
   if (e.request.method !== 'GET') return;
 
+  // Ignorar peticiones de desarrollo Vite o HMR
+  const url = e.request.url;
+  if (url.includes('/@vite/') || url.includes('/@fs/') || url.includes('/src/') || url.includes('hot-update')) {
+    return;
+  }
+
   e.respondWith(
     caches.match(e.request).then((cachedResponse) => {
       const fetchPromise = fetch(e.request)
